@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"] - %w[spec/dummy/config/dossier.yml]
 
   s.add_dependency "arel",            ">= 3.0"
-  s.add_dependency "activesupport",   "~> 3.2"
+  s.add_dependency "activesupport",   ">= 3.2"
   s.add_dependency "actionpack",      ">= 3.2"
   s.add_dependency "actionmailer",    ">= 3.2"
   s.add_dependency "railties",        ">= 3.2"
