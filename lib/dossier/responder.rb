@@ -21,6 +21,12 @@ module Dossier
       controller.response_body = Xls.new(report.raw_results.arrays)
     end
 
+    def to_xlsx
+      set_content_disposition!
+      report.renderer.engine   = controller
+      controller.response_body = report.render      
+    end
+
     def respond
       multi_report_html_only!
       super

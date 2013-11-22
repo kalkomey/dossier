@@ -6,4 +6,3 @@ gemspec
 gem "jquery-rails"
 gem "mysql2"
 gem 'coveralls', require: false
-

@@ -25,6 +25,7 @@ end
 
 require "dossier/adapter/active_record"
 require "dossier/adapter/active_record/result"
+require "dossier/axlsx"
 require "dossier/client"
 require "dossier/configuration"
 require "dossier/formatter"
