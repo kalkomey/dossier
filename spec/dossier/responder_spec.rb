@@ -55,5 +55,16 @@ describe Dossier::Responder do
     end
   end
 
-end
+  describe "to_xlxs" do
+    it "sets the content disposition" do
+      responder.should_receive(:set_content_disposition!)
+      responder.to_xlxs
+    end
 
+    it "calls render on the report" do
+      report.should_receive(:render)
+      responder.to_xlsx
+    end
+  end  
+
+end
