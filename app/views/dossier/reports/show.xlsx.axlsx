@@ -1,0 +1,9 @@
+workbook = xlsx_package.workbook
+
+workbook.add_worksheet(name: "Report") do |sheet|
+  sheet.add_row report.results.headers
+
+  report.results.body.each do |row|
+    sheet.add_row row
+  end
+end
