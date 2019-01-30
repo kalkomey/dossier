@@ -37,7 +37,7 @@ module Dossier
     end
 
     class Engine < AbstractController::Base
-      include AbstractController::Layouts
+      include ActionView::Layouts
       include ViewContextWithReportFormatter
       attr_reader :report
 
